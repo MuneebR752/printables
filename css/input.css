@@ -7,4 +7,6 @@
 body {
   font-family: "Inter", sans-serif;
   color: #1a1d1f;
+  max-width: 1440px;
+  background-color: #fcfcfc;
 }
