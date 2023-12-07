@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Qoutes</title>
+    <title>Customers</title>
   </head>
   <body>
     <section class="flex gap-0">
@@ -398,19 +398,84 @@
         </header>
         <main class="bg-[#f4f4f4] w-full h-full px-8 py-6">
           <div class="flex flex-col gap-4">
-            <h1 class="my-8 text-5xl font-semibold">Qoutes</h1>
+            <h1 class="my-8 text-5xl font-semibold">Customers</h1>
             <section class="bg-[#fcfcfc] rounded-[10px] px-4 py-8">
               <div class="flex items-center justify-between">
-                <h2 class="text-xl font-semibold">Products</h2>
-                <div class="flex gap-2">
+                <h2 class="text-xl font-semibold">Overview</h2>
+                <select
+                  name="stats-span"
+                  id="stats-span"
+                  class="w-[125px] h-9 box-border bg-[#fcfcfc] text-[#6f767e] text-[13px] font-semibold leading-[17px] px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef] outline-none"
+                >
+                  <option value="">This Week</option>
+                  <option value="">This Month</option>
+                  <option value="">This Year</option>
+                </select>
+              </div>
+              <div class="flex items-center gap-8 my-8">
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-5xl font-semibold">35</h3>
                   <button
-                    data-modal-target="default-modal"
-                    data-modal-toggle="default-modal"
-                    class="cursor-pointer w-[125px] h-9 box-border bg-[#f4f4f4] text-[#1a1d1f] text-sm font-bold leading-4 px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef]"
+                    class="flex justify-center px-6 items-center w-full py-2 text-center bg-[#efefef] rounded-[10px]"
                   >
-                    + Add Qoute
+                    Sent
                   </button>
-
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-5xl font-semibold">$ 12,000</h3>
+                  <button
+                    class="flex justify-center px-2 items-center w-full py-2 text-center bg-[#efefef] rounded-[10px]"
+                  >
+                    Paid
+                  </button>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-5xl font-semibold">$ 57,000</h3>
+                  <button
+                    class="flex justify-center px-2 items-center w-full py-2 text-center bg-[#efefef] rounded-[10px]"
+                  >
+                    Outstanding
+                  </button>
+                </div>
+                <div class="flex flex-col gap-2">
+                  <h3 class="text-5xl font-semibold">$ 70,000</h3>
+                  <button
+                    class="flex justify-center px-2 items-center w-full py-2 text-center bg-[#efefef] rounded-[10px]"
+                  >
+                    This Month Total
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="bg-[#fcfcfc] rounded-[10px] px-0 py-8">
+              <div class="flex items-center justify-between px-4">
+                <h2 class="text-xl font-semibold">All Orders</h2>
+                <div class="flex items-center gap-3">
+                  <input
+                    style="background-color: #f4f4f4; border-radius: 10px"
+                    type="text"
+                    name="search"
+                    id="search"
+                    class="h-9 bg-[#f4f4f4] text-[#6f767e] font-medium px-2 py-0 rounded-[10px] border-0 outline-none"
+                    placeholder="Search"
+                  />
+                  <button
+                    class="cursor-pointer flex justify-center items-center w-8 h-8 shadow-[0px_2px_8px_rgba(0,0,0,0.12)] bg-[#fcfcfc] rounded-[65px] border-0"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="w-4 h-4"
+                    >
+                      <circle cx="11" cy="11" r="8"></circle>
+                      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                  </button>
                   <select
                     name="stats-span"
                     id="stats-span"
@@ -422,7 +487,6 @@
                   </select>
                 </div>
               </div>
-
               <div class="flex flex-col my-4">
                 <div class="overflow-x-auto">
                   <div class="inline-block min-w-full align-middle">
@@ -432,125 +496,284 @@
                           <tr>
                             <th
                               scope="col"
-                              class="px-6 py-3 text-start text-[#6f767e] text-lg font-bold"
+                              class="px-6 py-3 text-start text-[#6f767e] text-xs font-bold"
                             >
                               Order ID
                             </th>
                             <th
                               scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
+                              class="px-6 py-3 text-start text-[#6f767e] text-xs font-bold"
+                            >
+                              Date
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-6 py-3 text-start text-[#6f767e] text-xs font-bold"
+                            >
+                              Type
+                            </th>
+                            <th
+                              scope="col"
+                              class="px-6 py-3 text-start text-[#6f767e] text-xs font-bold"
                             >
                               Customer
                             </th>
                             <th
                               scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
+                              class="px-6 py-3 text-start text-[#6f767e] text-xs font-bold"
                             >
-                              Status
+                              Products
                             </th>
                             <th
                               scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
+                              class="px-6 py-3 text-start text-[#6f767e] text-xs font-bold"
                             >
-                              Created
+                              Amount
                             </th>
                             <th
                               scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
+                              class="px-6 py-3 text-start text-[#6f767e] text-xs font-bold"
                             >
-                              Value
+                              Action
                             </th>
                           </tr>
                         </thead>
-                        <tbody class="divide-y divide-gray-200">
-                          <tr>
-                            <td class="px-6 py-4">
-                              <div class="flex flex-col">
-                                <span
-                                  class="text-[#2357d7] text-[15px] font-bold"
-                                >
-                                  ORD.00925
-                                </span>
-                                <span class="text-[#6d757d] text-xs font-bold">
-                                  Premium
-                                </span>
-                              </div>
-                            </td>
+                        <tbody>
+                          <tr class="odd:bg-[#efefef] even:bg-[#fcfcfc]">
                             <td class="px-6 py-4">
                               <div class="flex flex-col">
                                 <p class="text-[#2357d7] text-[13px] font-bold">
                                   Carl Wells
                                 </p>
-                                <p class="text-[#6d757d] font-semibold">
+                                <p
+                                  class="text-[#6d757d] text-[14px] font-semibold"
+                                >
                                   Application Manager
                                 </p>
                               </div>
                             </td>
-                            <td class="px-4 py-6">
+                            <td
+                              class="px-6 py-4 text-[#1a1d1f] text-xs font-bold"
+                            >
+                              13 Mar 2022
+                            </td>
+                            <td class="px-6 py-4">
                               <p
                                 class="cursor-pointer box-border bg-[#ffe7e4] text-[#ff6a55] text-xs font-semibold leading-4 px-3 text-center py-2 rounded-[5px] border-0"
                               >
                                 Pending
                               </p>
                             </td>
-
-                            <td class="px-6 py-6 text-[#6d757d] font-semibold">
-                              8 min ago
-                            </td>
-                            <td class="px-6 py-6 text-[#212529] font-bold">
-                              $ 2188,46
-                            </td>
-                            <td class="px-6 py-6">
-                              <button
-                                class="cursor-pointer w-[120px] h-9 box-border bg-[#111315] text-white text-[15px] font-bold leading-5 px-2 py-0 rounded-[10px] border-0"
-                              >
-                                View
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="px-6 py-4">
-                              <div class="flex flex-col">
-                                <span
-                                  class="text-[#2357d7] text-[15px] font-bold"
-                                >
-                                  ORD.00925
-                                </span>
-                                <span class="text-[#6d757d] text-xs font-bold">
-                                  Premium
-                                </span>
-                              </div>
-                            </td>
                             <td class="px-6 py-4">
                               <div class="flex flex-col">
                                 <p class="text-[#2357d7] text-[13px] font-bold">
                                   Carl Wells
                                 </p>
-                                <p class="text-[#6d757d] font-semibold">
+                                <p
+                                  class="text-[#6d757d] text-[14px] font-semibold"
+                                >
                                   Application Manager
                                 </p>
                               </div>
                             </td>
-                            <td class="px-4 py-6">
+                            <td
+                              class="px-6 py-4 text-[#1a1d1f] text-xs font-bold"
+                            >
+                              4
+                            </td>
+                            <td
+                              class="px-6 py-4 text-[#212529] text-[15px] font-bold"
+                            >
+                              $ 2188,46
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="flex gap-2">
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/Icon-visibility.png"
+                                    alt=""
+                                  />
+                                </button>
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/Icon-close.png"
+                                    alt=""
+                                  />
+                                </button>
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/download.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="odd:bg-[#efefef] even:bg-[#fcfcfc]">
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <p class="text-[#2357d7] text-[13px] font-bold">
+                                  Carl Wells
+                                </p>
+                                <p
+                                  class="text-[#6d757d] text-[14px] font-semibold"
+                                >
+                                  Application Manager
+                                </p>
+                              </div>
+                            </td>
+                            <td
+                              class="px-6 py-4 text-[#1a1d1f] text-xs font-bold"
+                            >
+                              13 Mar 2022
+                            </td>
+                            <td class="px-6 py-4">
                               <p
                                 class="cursor-pointer box-border bg-[#eafae5] text-[#83bf6e] text-xs font-semibold leading-4 px-3 text-center py-2 rounded-[5px] border-0"
                               >
                                 Accepted
                               </p>
                             </td>
-
-                            <td class="px-6 py-6 text-[#6d757d] font-semibold">
-                              8 min ago
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <p class="text-[#2357d7] text-[13px] font-bold">
+                                  Carl Wells
+                                </p>
+                                <p
+                                  class="text-[#6d757d] text-[14px] font-semibold"
+                                >
+                                  Application Manager
+                                </p>
+                              </div>
                             </td>
-                            <td class="px-6 py-6 text-[#212529] font-bold">
+                            <td
+                              class="px-6 py-4 text-[#1a1d1f] text-xs font-bold"
+                            >
+                              4
+                            </td>
+                            <td
+                              class="px-6 py-4 text-[#212529] text-[15px] font-bold"
+                            >
                               $ 2188,46
                             </td>
-                            <td class="px-6 py-6">
-                              <button
-                                class="cursor-pointer w-[120px] h-9 box-border bg-[#111315] text-white text-[15px] font-bold leading-5 px-2 py-0 rounded-[10px] border-0"
+                            <td class="px-6 py-4">
+                              <div class="flex gap-2">
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/Icon-visibility.png"
+                                    alt=""
+                                  />
+                                </button>
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/Icon-close.png"
+                                    alt=""
+                                  />
+                                </button>
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/download.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="odd:bg-[#efefef] even:bg-[#fcfcfc]">
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <p class="text-[#2357d7] text-[13px] font-bold">
+                                  Carl Wells
+                                </p>
+                                <p
+                                  class="text-[#6d757d] text-[14px] font-semibold"
+                                >
+                                  Application Manager
+                                </p>
+                              </div>
+                            </td>
+                            <td
+                              class="px-6 py-4 text-[#1a1d1f] text-xs font-bold"
+                            >
+                              13 Mar 2022
+                            </td>
+                            <td class="px-6 py-4">
+                              <p
+                                class="cursor-pointer box-border bg-[#d62047] text-white text-xs font-semibold leading-4 px-3 text-center py-2 rounded-[5px] border-0"
                               >
-                                View
-                              </button>
+                                Cancelled
+                              </p>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <p class="text-[#2357d7] text-[13px] font-bold">
+                                  Carl Wells
+                                </p>
+                                <p
+                                  class="text-[#6d757d] text-[14px] font-semibold"
+                                >
+                                  Application Manager
+                                </p>
+                              </div>
+                            </td>
+                            <td
+                              class="px-6 py-4 text-[#1a1d1f] text-xs font-bold"
+                            >
+                              4
+                            </td>
+                            <td
+                              class="px-6 py-4 text-[#212529] text-[15px] font-bold"
+                            >
+                              $ 2188,46
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="flex gap-2">
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/Icon-visibility.png"
+                                    alt=""
+                                  />
+                                </button>
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/Icon-close.png"
+                                    alt=""
+                                  />
+                                </button>
+                                <button
+                                  class="shadow-[0px_2px_8px_rgba(0,0,0,0.12)] border-0"
+                                >
+                                  <img
+                                    width="45"
+                                    src="./assets/img/download.png"
+                                    alt=""
+                                  />
+                                </button>
+                              </div>
                             </td>
                           </tr>
                         </tbody>
@@ -560,7 +783,7 @@
                 </div>
               </div>
               <hr />
-              <div class="flex justify-end gap-2 my-4 font-bold">
+              <div class="flex justify-end gap-2 px-4 my-4 font-bold">
                 <p>Prev</p>
                 <p>1</p>
                 <p>2</p>
@@ -578,9 +801,7 @@
       aria-hidden="true"
       class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-auto"
     >
-      <div
-        class="relative max-w-xl bg-white rounded-lg shadow dark:bg-gray-700"
-      >
+      <div class="relative max-w-xl bg-white rounded-lg shadow">
         <!-- Modal header -->
         <div
           class="flex items-center justify-between p-4 border-b rounded-t md:p-5"
@@ -638,12 +859,12 @@
         </div>
         <!-- Modal footer -->
         <div
-          class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600"
+          class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5"
         >
           <button
             data-modal-hide="default-modal"
             type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
           >
             Add
           </button>
