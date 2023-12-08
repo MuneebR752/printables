@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Profile</title>
+    <title>Add Qoute</title>
   </head>
   <body>
     <section class="flex gap-0">
@@ -495,267 +495,186 @@
             <img src="./assets/img/profile.png" alt="profile" />
           </div>
         </header>
-        <main class="bg-[#f4f4f4] w-full h-full px-8 py-6">
-          <div class="flex gap-4 p-6 bg-[#fcfcfc]">
-            <nav class="w-1/4">
-              <ul class="py-2 space-y-2">
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center justify-center w-full p-2 transition duration-75 group active:bg-gray-100 cursor-pointer rounded-[10px] bg-[#efefef] text-[15px] font-bold"
-                    >Basics</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 transition duration-75 justify-center group active:bg-gray-100 cursor-pointer rounded-[10px] text-[#6f767e] text-[15px] font-bold"
-                    >Account</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 transition duration-75 justify-center group active:bg-gray-100 cursor-pointer rounded-[10px] text-[#6f767e] text-[15px] font-bold"
-                    >Notification</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    class="flex items-center w-full p-2 transition duration-75 justify-center group active:bg-gray-100 cursor-pointer rounded-[10px] text-[#6f767e] text-[15px] font-bold"
-                    >Payment</a
-                  >
-                </li>
-              </ul>
-            </nav>
-            <div class="flex flex-col w-full gap-6 py-2">
-              <h3 class="text-[#1a1d1f] text-xl font-semibold">
-                Profile Information
-              </h3>
-              <div class="flex items-center gap-4">
-                <img src="./assets/img/profilePageImg.png" alt="ProfilePic" />
+        <main class="bg-[#f4f4f4] w-full h-full px-6 py-4">
+          <div class="flex flex-col gap-4">
+            <h1 class="my-8 text-5xl font-semibold">Create Qoute</h1>
+            <section class="bg-[#fcfcfc] rounded-[10px] p-4">
+              <div class="flex items-start gap-2">
+                <input
+                  type="text"
+                  class="w-[30%] h-9 px-2 border-[1.5px] border-[#ededed] box-border rounded-lg bg-[#ffffff] text-[#595c5f] text-[15px] outline-none"
+                  placeholder="Search Customer"
+                />
                 <button
-                  class="cursor-pointer bg-[#2a85ff] text-[#fcfcfc] text-[15px] px-8 py-1.5 font-bold rounded-[9px]"
+                  class="px-2 py-1 bg-[#6f767e] text-white text-[19px] font-bold text-center rounded-md whitespace-nowrap"
                 >
-                  Upload new picture
+                  + Add
                 </button>
-                <button
-                  class="cursor-pointer bg-[#fcfcfc] text-[#1a1d1f] text-[15px] px-8 py-1 font-bold rounded-[9px] border-2 border-[#efefef]"
+                <div
+                  class="pl-2 pr-4 py-1.5 bg-[#e9ecef] text-[#717171] text-[14] font-light text-center rounded-md whitespace-nowrap"
                 >
-                  Remove
-                </button>
+                  RE- 62
+                </div>
+                <div
+                  class="pl-2 pr-4 py-1.5 bg-[#e9ecef] text-[#717171] text-[14] font-light text-center rounded-md"
+                >
+                  02/12/2023
+                </div>
+                <input
+                  type="text"
+                  class="w-1/5 h-9 px-2 border-[1.5px] border-[#ededed] box-border rounded-lg bg-[#ffffff] text-[#595c5f] text-[15px] outline-none"
+                  placeholder="Select Saleman"
+                /><input
+                  type="text"
+                  class="w-1/5 h-9 px-2 border-[1.5px] border-[#ededed] box-border rounded-lg bg-[#ffffff] text-[#595c5f] text-[15px] outline-none"
+                  placeholder="Search"
+                />
               </div>
-              <div class="flex flex-col">
-                <div class="flex flex-col gap-2 my-4">
-                  <label
-                    class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                    for="name"
-                  >
-                    Full Name</label
-                  >
-                  <input
-                    style="background-color: #f4f4f4; border-radius: 10px"
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                    placeholder="Name Surname"
-                  />
-                </div>
-                <div class="flex flex-col gap-2 my-4">
-                  <label
-                    class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                    for="email"
-                  >
-                    Email</label
-                  >
-                  <input
-                    style="background-color: #f4f4f4; border-radius: 10px"
-                    type="text"
-                    name="email"
-                    id="email"
-                    class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                    placeholder="Your Email"
-                  />
-                </div>
-                <div class="flex flex-col gap-2 my-4">
-                  <label
-                    class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                    for="location"
-                  >
-                    Location</label
-                  >
-                  <input
-                    style="background-color: #f4f4f4; border-radius: 10px"
-                    type="text"
-                    name="location"
-                    id="location"
-                    class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                    placeholder="New York"
-                  />
-                </div>
-                <div class="flex flex-col gap-2 my-4">
-                  <label
-                    class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                    for="bio"
-                  >
-                    Bio</label
-                  >
-                  <input
-                    style="background-color: #f4f4f4; border-radius: 10px"
-                    type="text"
-                    name="bio"
-                    id="bio"
-                    class="w-full h-20 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                    placeholder="Hey everyone! This is my bio. It's cool isn't it?,
-                    "
-                  />
-                </div>
-              </div>
-              <hr />
-              <div class="flex flex-col gap-6">
-                <h3 class="text-[#1a1d1f] text-xl font-semibold">Login</h3>
-                <div class="flex flex-col gap-2">
-                  <label
-                    class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                    for="name"
-                  >
-                    Old Password</label
-                  >
-                  <input
-                    style="background-color: #f4f4f4; border-radius: 10px"
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                    placeholder="P4$$w0rd"
-                  />
-                </div>
-                <div class="grid grid-cols-2 gap-4">
-                  <div class="flex flex-col gap-2">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="email"
-                    >
-                      New Password</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="text"
-                      name="email"
-                      id="email"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                    />
+              <div class="flex w-full gap-3 my-8">
+                <div class="w-[75%] flex flex-col gap-6">
+                  <hr class="h-[5px] bg-[#efefef] rounded-sm w-full" />
+
+                  <div class="flex items-center justify-between px-2">
+                    <div class="text-[#0d6efd] font-semibold">#</div>
+                    <div class="text-[#0d6efd] font-semibold">Particulars</div>
+                    <div class="text-[#0d6efd] font-semibold">
+                      Selling Price
+                    </div>
+                    <div class="text-[#0d6efd] font-semibold">Rate</div>
+                    <div class="text-[#0d6efd] font-semibold">QTY</div>
+                    <div class="text-[#0d6efd] font-semibold">Tax%</div>
+                    <div class="text-[#0d6efd] font-semibold">Total</div>
                   </div>
-                  <div class="flex flex-col gap-2">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="location"
-                    >
-                      Confirm Password</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="text"
-                      name="location"
-                      id="location"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                    />
+
+                  <hr class="h-[5px] bg-[#efefef] rounded-sm w-full" />
+
+                  <div class="w-full h-64"></div>
+                  <hr class="h-[5px] bg-[#efefef] rounded-sm w-full" />
+
+                  <div class="flex w-full gap-4">
+                    <!-- l  -->
+                    <div class="flex flex-col w-3/5 gap-4">
+                      <div class="flex flex-col w-full gap-4">
+                        <label
+                          class="text-xs text-[#6c757d] font-semibold leading-4"
+                          for="password"
+                        >
+                          Discount</label
+                        >
+                        <input
+                          style="border-radius: 10px"
+                          type="tel"
+                          name="password"
+                          id="password"
+                          class="w-full h-12 box-border bg-white text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border border-[#ededed] outline-none"
+                          placeholder="Enter Amount"
+                        />
+                      </div>
+                      <div class="flex flex-col gap-4">
+                        <label
+                          class="text-xs text-[#6c757d] font-semibold leading-4"
+                          for="password"
+                        >
+                          Notes/Remarkes</label
+                        >
+                        <input
+                          style="border-radius: 10px"
+                          type="tel"
+                          name="password"
+                          id="password"
+                          class="w-full h-20 box-border bg-white text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border border-[#ededed] outline-none"
+                          placeholder="Enter Notes/Remarkes"
+                        />
+                      </div>
+                    </div>
+                    <!-- r -->
+                    <div class="flex flex-col w-2/5 gap-3 py-8">
+                      <div class="flex justify-between">
+                        <div class="text-[#1a1d1f] text-[13px]">Sub Total</div>
+                        <div class="text-[#1a1d1f] text-[13px]">0.00</div>
+                      </div>
+                      <div class="flex justify-between">
+                        <div class="text-[#1a1d1f] text-[13px]">Discount</div>
+                        <div class="text-[#1a1d1f] text-[13px]">0.00</div>
+                      </div>
+                      <div class="flex justify-between">
+                        <div class="text-[#1a1d1f] text-[13px]">Taxable</div>
+                        <div class="text-[#1a1d1f] text-[13px]">0.00</div>
+                      </div>
+                      <div class="flex justify-between">
+                        <div class="text-[#1a1d1f] text-[13px]">Tax Amount</div>
+                        <div class="text-[#1a1d1f] text-[13px]">0.00</div>
+                      </div>
+                      <div class="flex justify-between">
+                        <div class="text-[#1a1d1f] text-[13px]">
+                          Gross Total
+                        </div>
+                        <div class="text-[#1a1d1f] text-[13px]">0.00</div>
+                      </div>
+                      <div class="flex justify-between w-full">
+                        <button
+                          class="cursor-pointer bg-[#2a85ff] text-[#fcfcfc] text-[15px] px-8 py-2 font-bold rounded-[9px] whitespace-nowrap"
+                        >
+                          Clear All
+                        </button>
+                        <button
+                          class="cursor-pointer bg-[#6f767e] text-white text-[15px] px-6 py-2 font-bold rounded-[9px]"
+                        >
+                          Checkout
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div>
-                  <button
-                    class="cursor-pointer bg-[#fcfcfc] text-[#1a1d1f] text-[15px] px-8 py-1 font-bold rounded-[9px] border-2 border-[#efefef]"
+                <!-- rSide -->
+                <div class="flex flex-col gap-4" style="width: 25%">
+                  <div
+                    class="bg-white py-1 px-1 border shadow-[0px_2px_8px_rgba(0,0,0,0.12)] rounded-[10px] border-solid border-[#e1dbee]"
                   >
-                    Update Password
-                  </button>
-                </div>
-              </div>
-              <hr />
-              <div class="flex flex-col gap-4">
-                <h3 class="text-[#1a1d1f] text-xl font-semibold">Login</h3>
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center justify-between w-full">
-                    <p class="text-[#1a1d1f] text-[15px] font-semibold">
-                      Product updates and community announcements'
-                    </p>
-                    <label
-                      class="relative inline-flex items-center cursor-pointer"
-                    >
-                      <input type="checkbox" value="" class="sr-only peer" />
-                      <div
-                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"
-                      ></div>
-                    </label>
+                    <div class="flex gap-3">
+                      <img src="./assets/img/Productx.png" alt="img" />
+                      <div class="flex flex-col items-center justify-center">
+                        <p>Shirt</p>
+                        <p>500.0</p>
+                      </div>
+                    </div>
                   </div>
-                  <hr />
-                </div>
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center justify-between w-full">
-                    <p class="text-[#1a1d1f] text-[15px] font-semibold">
-                      Product updates and community announcements'
-                    </p>
-                    <label
-                      class="relative inline-flex items-center cursor-pointer"
-                    >
-                      <input type="checkbox" value="" class="sr-only peer" />
-                      <div
-                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"
-                      ></div>
-                    </label>
+                  <div
+                    class="bg-white py-1 px-1 border shadow-[0px_2px_8px_rgba(0,0,0,0.12)] rounded-[10px] border-solid border-[#e1dbee]"
+                  >
+                    <div class="flex gap-3">
+                      <img src="./assets/img/Productx.png" alt="img" />
+                      <div class="flex flex-col items-center justify-center">
+                        <p>Shirt</p>
+                        <p>500.0</p>
+                      </div>
+                    </div>
                   </div>
-                  <hr />
-                </div>
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center justify-between w-full">
-                    <p class="text-[#1a1d1f] text-[15px] font-semibold">
-                      Product updates and community announcements'
-                    </p>
-                    <label
-                      class="relative inline-flex items-center cursor-pointer"
-                    >
-                      <input type="checkbox" value="" class="sr-only peer" />
-                      <div
-                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"
-                      ></div>
-                    </label>
+                  <div
+                    class="bg-white py-1 px-1 border shadow-[0px_2px_8px_rgba(0,0,0,0.12)] rounded-[10px] border-solid border-[#e1dbee]"
+                  >
+                    <div class="flex gap-3">
+                      <img src="./assets/img/Productx.png" alt="img" />
+                      <div class="flex flex-col items-center justify-center">
+                        <p>Shirt</p>
+                        <p>500.0</p>
+                      </div>
+                    </div>
                   </div>
-                  <hr />
-                </div>
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center justify-between w-full">
-                    <p class="text-[#1a1d1f] text-[15px] font-semibold">
-                      Product updates and community announcements'
-                    </p>
-                    <label
-                      class="relative inline-flex items-center cursor-pointer"
-                    >
-                      <input type="checkbox" value="" class="sr-only peer" />
-                      <div
-                        class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"
-                      ></div>
-                    </label>
-                  </div>
-                  <hr />
-                </div>
-              </div>
-              <div class="flex flex-col gap-4 my-4">
-                <h3 class="text-[#1a1d1f] text-xl font-semibold">Payment</h3>
-                <div class="flex flex-col gap-4">
-                  <div class="flex items-center justify-between w-full">
-                    <p class="text-[#1a1d1f] text-[15px] font-semibold">
-                      Credit
-                    </p>
-                    <button
-                      class="cursor-pointer bg-[#fcfcfc] text-[#1a1d1f] text-[15px] px-4 py-1 font-bold rounded-[9px] border-2 border-[#efefef]"
-                    >
-                      Edit
-                    </button>
+                  <div
+                    class="bg-white py-1 px-1 border shadow-[0px_2px_8px_rgba(0,0,0,0.12)] rounded-[10px] border-solid border-[#e1dbee]"
+                  >
+                    <div class="flex gap-3">
+                      <img src="./assets/img/Productx.png" alt="img" />
+                      <div class="flex flex-col items-center justify-center">
+                        <p>Shirt</p>
+                        <p>500.0</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </section>
           </div>
         </main>
       </section>
