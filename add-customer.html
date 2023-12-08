@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Qoutes</title>
+    <title>Add Customer</title>
   </head>
   <body>
     <section class="flex gap-0">
@@ -497,258 +497,131 @@
         </header>
         <main class="bg-[#f4f4f4] w-full h-full px-8 py-6">
           <div class="flex flex-col gap-4">
-            <h1 class="my-8 text-5xl font-semibold">Qoutes</h1>
-            <section class="bg-[#fcfcfc] rounded-[10px] px-4 py-8">
-              <div class="flex items-center justify-between">
-                <h2 class="text-xl font-semibold">Products</h2>
-                <div class="flex gap-2">
-                  <button
-                    data-modal-target="default-modal"
-                    data-modal-toggle="default-modal"
-                    class="cursor-pointer w-[125px] h-9 box-border bg-[#f4f4f4] text-[#1a1d1f] text-sm font-bold leading-4 px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef]"
-                  >
-                    + Add Qoute
-                  </button>
-
-                  <select
-                    name="stats-span"
-                    id="stats-span"
-                    class="w-[125px] h-9 box-border bg-[#fcfcfc] text-[#6f767e] text-[13px] font-semibold leading-[17px] px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef] outline-none"
-                  >
-                    <option value="">This Week</option>
-                    <option value="">This Month</option>
-                    <option value="">This Year</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="flex flex-col my-4">
-                <div class="overflow-x-auto">
-                  <div class="inline-block min-w-full align-middle">
-                    <div class="overflow-hidden">
-                      <table class="min-w-full divide-y divide-gray-200">
-                        <thead>
-                          <tr>
-                            <th
-                              scope="col"
-                              class="px-6 py-3 text-start text-[#6f767e] text-lg font-bold"
-                            >
-                              Order ID
-                            </th>
-                            <th
-                              scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
-                            >
-                              Customer
-                            </th>
-                            <th
-                              scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
-                            >
-                              Status
-                            </th>
-                            <th
-                              scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
-                            >
-                              Created
-                            </th>
-                            <th
-                              scope="col"
-                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
-                            >
-                              Value
-                            </th>
-                          </tr>
-                        </thead>
-                        <tbody class="divide-y divide-gray-200">
-                          <tr>
-                            <td class="px-6 py-4">
-                              <div class="flex flex-col">
-                                <span
-                                  class="text-[#2357d7] text-[15px] font-bold"
-                                >
-                                  ORD.00925
-                                </span>
-                                <span class="text-[#6d757d] text-xs font-bold">
-                                  Premium
-                                </span>
-                              </div>
-                            </td>
-                            <td class="px-6 py-4">
-                              <div class="flex flex-col">
-                                <p class="text-[#2357d7] text-[13px] font-bold">
-                                  Carl Wells
-                                </p>
-                                <p class="text-[#6d757d] font-semibold">
-                                  Application Manager
-                                </p>
-                              </div>
-                            </td>
-                            <td class="px-4 py-6">
-                              <p
-                                class="cursor-pointer box-border bg-[#ffe7e4] text-[#ff6a55] text-xs font-semibold leading-4 px-3 text-center py-2 rounded-[5px] border-0"
-                              >
-                                Pending
-                              </p>
-                            </td>
-
-                            <td class="px-6 py-6 text-[#6d757d] font-semibold">
-                              8 min ago
-                            </td>
-                            <td class="px-6 py-6 text-[#212529] font-bold">
-                              $ 2188,46
-                            </td>
-                            <td class="px-6 py-6">
-                              <button
-                                class="cursor-pointer w-[120px] h-9 box-border bg-[#111315] text-white text-[15px] font-bold leading-5 px-2 py-0 rounded-[10px] border-0"
-                              >
-                                View
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="px-6 py-4">
-                              <div class="flex flex-col">
-                                <span
-                                  class="text-[#2357d7] text-[15px] font-bold"
-                                >
-                                  ORD.00925
-                                </span>
-                                <span class="text-[#6d757d] text-xs font-bold">
-                                  Premium
-                                </span>
-                              </div>
-                            </td>
-                            <td class="px-6 py-4">
-                              <div class="flex flex-col">
-                                <p class="text-[#2357d7] text-[13px] font-bold">
-                                  Carl Wells
-                                </p>
-                                <p class="text-[#6d757d] font-semibold">
-                                  Application Manager
-                                </p>
-                              </div>
-                            </td>
-                            <td class="px-4 py-6">
-                              <p
-                                class="cursor-pointer box-border bg-[#eafae5] text-[#83bf6e] text-xs font-semibold leading-4 px-3 text-center py-2 rounded-[5px] border-0"
-                              >
-                                Accepted
-                              </p>
-                            </td>
-
-                            <td class="px-6 py-6 text-[#6d757d] font-semibold">
-                              8 min ago
-                            </td>
-                            <td class="px-6 py-6 text-[#212529] font-bold">
-                              $ 2188,46
-                            </td>
-                            <td class="px-6 py-6">
-                              <button
-                                class="cursor-pointer w-[120px] h-9 box-border bg-[#111315] text-white text-[15px] font-bold leading-5 px-2 py-0 rounded-[10px] border-0"
-                              >
-                                View
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+            <h1 class="my-8 text-5xl font-semibold">Add Customer</h1>
+            <section class="bg-[#fcfcfc] rounded-[10px] p-8">
+              <h3 class="text-[#1a1d1f] text-xl font-semibold">Customer</h3>
+              <div class="flex flex-col gap-16 mt-12 mb-4">
+                <div class="grid grid-cols-3 gap-6">
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Customer ID / File Number *</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="text"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Customer ID / File Number *"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Customer ID / File Number *</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="text"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Customer ID / File Number *"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Customer First Name *</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="text"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Customer First Name *"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Customer Last Name</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="text"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Customer Last Name"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Customer Email</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="email"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Customer Email"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Primary Phone Number</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="tel"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Primary Phone Number"
+                    />
                   </div>
                 </div>
-              </div>
-              <hr />
-              <div class="flex justify-end gap-2 my-4 font-bold">
-                <p>Prev</p>
-                <p>1</p>
-                <p>2</p>
-                <p>3</p>
-                <p>Next</p>
+                <div>
+                  <input
+                    style="background-color: #f4f4f4; border-radius: 10px"
+                    type="text"
+                    name="password"
+                    id="password"
+                    class="w-full h-24 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                    placeholder="Customer Address"
+                  />
+                </div>
+                <div class="flex justify-end px-8">
+                  <button
+                    class="cursor-pointer bg-[#2a85ff] text-[#fcfcfc] text-[15px] px-8 py-2 font-bold rounded-[9px]"
+                  >
+                    Submit
+                  </button>
+                </div>
               </div>
             </section>
           </div>
         </main>
       </section>
     </section>
-    <div
-      id="default-modal"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-auto"
-    >
-      <div
-        class="relative max-w-xl bg-white rounded-lg shadow dark:bg-gray-700"
-      >
-        <!-- Modal header -->
-        <div
-          class="flex items-center justify-between p-4 border-b rounded-t md:p-5"
-        >
-          <h3 class="text-xl font-semibold text-gray-900">Add New Product</h3>
-          <button
-            type="button"
-            class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto"
-            data-modal-hide="default-modal"
-          >
-            <svg
-              class="w-3 h-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-              />
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-        </div>
-        <!-- Modal body -->
-        <div class="p-4 space-y-4 md:p-5">
-          <form class="flex flex-col gap-2 my-6">
-            <label class="text-xs font-semibold leading-4" for="email"
-              >Email</label
-            >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="w-[432px] h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-              placeholder="Enter your email"
-            />
-          </form>
-          <div class="flex flex-col gap-2 my-6">
-            <label class="text-xs font-semibold leading-4" for="password">
-              Password</label
-            >
-            <input
-              type="password"
-              name="password"
-              id="password"
-              class="w-[432px] h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-              placeholder="********"
-            />
-          </div>
-        </div>
-        <!-- Modal footer -->
-        <div
-          class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600"
-        >
-          <button
-            data-modal-hide="default-modal"
-            type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Add
-          </button>
-        </div>
-      </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   </body>
 </html>
