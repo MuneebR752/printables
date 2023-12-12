@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Job Pipeline</title>
+    <title>Add Invoice</title>
   </head>
   <body>
     <section class="flex gap-0">
@@ -92,7 +92,7 @@
                       </filter>
                     </defs>
                   </svg>
-                  <span class="ms-3">Dashboard</span>
+                  <span class="ms-3">Add Invoice</span>
                 </a>
               </li>
               <li>
@@ -497,134 +497,98 @@
         </header>
         <main class="bg-[#f4f4f4] w-full h-full px-8 py-6">
           <div class="flex flex-col gap-4">
-            <h1 class="my-8 text-5xl font-semibold">Status</h1>
-            <section class="bg-[#fcfcfc] rounded-[10px] px-4 py-8">
-              <div class="flex items-center justify-between">
-                <h2 class="text-[#001c30] text-[22px]">Status</h2>
-              </div>
-              <div class="flex items-center gap-4 my-8">
-                <div class="flex flex-col gap-2">
-                  <h2
-                    class="text-center text-[#6c757d] text-[21px] font-bold uppercase"
-                  >
-                    Pending
-                  </h2>
-                  <div
-                    class="flex flex-col justify-between w-72 h-44 bg-white shadow-[0px_2px_8px_rgba(0,0,0,0.12)] rounded-[10px] p-3"
-                  >
-                    <div class="flex items-start justify-between">
-                      <div>
-                        <p class="text-[#001c30] text-[15px]"># RE- 61</p>
-                        <p class="text-[#001c30] text-[13px]">
-                          Date: 01/12/2023
-                        </p>
-                        <p class="text-[#6c757d] text-[13px]">Admin</p>
-                      </div>
-                      <div
-                        class="cursor-pointer bg-[#313866] text-white text-xs font-bold px-3 py-1 rounded-[9px] uppercase"
-                      >
-                        Pending
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex gap-2">
-                        <div>
-                          <img src="./assets/img/profileIcon.svg" alt="" />
-                        </div>
-                        <div>
-                          <p class="text-[#001c30] text-[17px]">12</p>
-                          <p class="text-[#6c757d] text-[13px]">Test</p>
-                        </div>
-                      </div>
-                      <div
-                        class="cursor-pointer bg-[#717171] text-white text-xs font-bold px-3 py-1 rounded-[9px]"
-                      >
-                        Mark as
-                      </div>
-                    </div>
+            <h1 class="my-8 text-5xl font-semibold">Add Invoice</h1>
+            <section class="bg-[#fcfcfc] rounded-[10px] p-8">
+              <h3 class="text-[#1a1d1f] text-xl font-semibold">Invoice</h3>
+              <div class="flex flex-col gap-16 mt-12 mb-4">
+                <div class="grid grid-cols-1 gap-6">
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Order ID / File Number *</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="text"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Order ID / File Number *"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Customer ID *</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="text"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Customer ID *"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Date</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="date"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Order Date"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Products</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="number"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Products"
+                    />
+                  </div>
+                  <div class="flex flex-col gap-4">
+                    <label
+                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
+                      for="password"
+                    >
+                      Amount ($)</label
+                    >
+                    <input
+                      style="background-color: #f4f4f4; border-radius: 10px"
+                      type="number"
+                      name="password"
+                      id="password"
+                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+                      placeholder="Amount"
+                    />
                   </div>
                 </div>
-                <div class="flex flex-col gap-2">
-                  <h2
-                    class="text-center text-[#fdc107] text-[21px] font-bold uppercase"
+                <div class="flex justify-end px-8">
+                  <button
+                    class="cursor-pointer bg-[#2a85ff] text-[#fcfcfc] text-[15px] px-8 py-2 font-bold rounded-[9px]"
                   >
-                    Processing
-                  </h2>
-                  <div
-                    class="flex flex-col justify-between w-72 h-44 bg-white shadow-[0px_2px_8px_rgba(0,0,0,0.12)] rounded-[10px] p-3"
-                  >
-                    <div class="flex items-start justify-between">
-                      <div>
-                        <p class="text-[#001c30] text-[15px]"># RE- 61</p>
-                        <p class="text-[#001c30] text-[13px]">
-                          Date: 01/12/2023
-                        </p>
-                        <p class="text-[#6c757d] text-[13px]">Admin</p>
-                      </div>
-                      <div
-                        class="cursor-pointer bg-[#f09b41] text-white text-xs font-bold px-3 py-1 rounded-[9px] uppercase"
-                      >
-                        Processing
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex gap-2">
-                        <div>
-                          <img src="./assets/img/profileIcon.svg" alt="" />
-                        </div>
-                        <div>
-                          <p class="text-[#001c30] text-[17px]">01000100</p>
-                          <p class="text-[#6c757d] text-[13px]">angel</p>
-                        </div>
-                      </div>
-                      <div
-                        class="cursor-pointer bg-[#717171] text-white text-xs font-bold px-3 py-1 rounded-[9px]"
-                      >
-                        Mark as
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex flex-col gap-2">
-                  <h2
-                    class="text-center text-[#198754] text-[21px] font-bold uppercase"
-                  >
-                    Ready To
-                  </h2>
-                  <div
-                    class="flex flex-col justify-between w-72 h-44 bg-white shadow-[0px_2px_8px_rgba(0,0,0,0.12)] rounded-[10px] p-3"
-                  >
-                    <div class="flex items-start justify-between">
-                      <div>
-                        <p class="text-[#001c30] text-[15px]"># RE- 61</p>
-                        <p class="text-[#001c30] text-[13px]">
-                          Date: 01/12/2023
-                        </p>
-                        <p class="text-[#6c757d] text-[13px]">Admin</p>
-                      </div>
-                      <div
-                        class="cursor-pointer bg-[#001c30] text-white text-xs font-bold px-3 py-1 rounded-[9px] uppercase"
-                      >
-                        Ready to
-                      </div>
-                    </div>
-                    <div class="flex items-center justify-between">
-                      <div class="flex gap-2">
-                        <div>
-                          <img src="./assets/img/profileIcon.svg" alt="" />
-                        </div>
-                        <div>
-                          <p class="text-[#001c30] text-[17px]">00010001</p>
-                          <p class="text-[#6c757d] text-[13px]">angel</p>
-                        </div>
-                      </div>
-                      <div
-                        class="cursor-pointer bg-[#717171] text-white text-xs font-bold px-3 py-1 rounded-[9px]"
-                      >
-                        Mark as
-                      </div>
-                    </div>
-                  </div>
+                    Submit
+                  </button>
                 </div>
               </div>
             </section>

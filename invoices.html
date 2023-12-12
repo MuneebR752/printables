@@ -8,7 +8,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Customers</title>
+    <title>Invoices</title>
   </head>
   <body>
     <section class="flex gap-0">
@@ -497,7 +497,7 @@
         </header>
         <main class="bg-[#f4f4f4] w-full h-full px-8 py-6">
           <div class="flex flex-col gap-4">
-            <h1 class="my-8 text-5xl font-semibold">Customers</h1>
+            <h1 class="my-8 text-5xl font-semibold">Invoices</h1>
             <section class="bg-[#fcfcfc] rounded-[10px] px-4 py-8">
               <div class="flex items-center justify-between">
                 <h2 class="text-xl font-semibold">Overview</h2>
@@ -548,7 +548,7 @@
             </section>
             <section class="bg-[#fcfcfc] rounded-[10px] px-0 py-8">
               <div class="flex items-center justify-between px-4">
-                <h2 class="text-xl font-semibold">All Orders</h2>
+                <h2 class="text-xl font-semibold">All Invoices</h2>
                 <div class="flex items-center gap-3">
                   <input
                     style="background-color: #f4f4f4; border-radius: 10px"
@@ -575,6 +575,12 @@
                       <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
                     </svg>
                   </button>
+                  <a
+                    href="add-invoice.html"
+                    class="cursor-pointer w-[125px] h-9 box-border bg-[#f4f4f4] text-[#1a1d1f] text-sm font-bold leading-4 px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef] flex justify-center items-center"
+                  >
+                    + Add Invoice
+                  </a>
                   <select
                     name="stats-span"
                     id="stats-span"
@@ -894,82 +900,6 @@
         </main>
       </section>
     </section>
-    <div
-      id="default-modal"
-      tabindex="-1"
-      aria-hidden="true"
-      class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-auto"
-    >
-      <div class="relative max-w-xl bg-white rounded-lg shadow">
-        <!-- Modal header -->
-        <div
-          class="flex items-center justify-between p-4 border-b rounded-t md:p-5"
-        >
-          <h3 class="text-xl font-semibold text-gray-900">Add New Product</h3>
-          <button
-            type="button"
-            class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto"
-            data-modal-hide="default-modal"
-          >
-            <svg
-              class="w-3 h-3"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
-              />
-            </svg>
-            <span class="sr-only">Close modal</span>
-          </button>
-        </div>
-        <!-- Modal body -->
-        <div class="p-4 space-y-4 md:p-5">
-          <form class="flex flex-col gap-2 my-6">
-            <label class="text-xs font-semibold leading-4" for="email"
-              >Email</label
-            >
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="w-[432px] h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-              placeholder="Enter your email"
-            />
-          </form>
-          <div class="flex flex-col gap-2 my-6">
-            <label class="text-xs font-semibold leading-4" for="password">
-              Password</label
-            >
-            <input
-              type="password"
-              name="password"
-              id="password"
-              class="w-[432px] h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-              placeholder="********"
-            />
-          </div>
-        </div>
-        <!-- Modal footer -->
-        <div
-          class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5"
-        >
-          <button
-            data-modal-hide="default-modal"
-            type="button"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-          >
-            Add
-          </button>
-        </div>
-      </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   </body>
 </html>

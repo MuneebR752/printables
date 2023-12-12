@@ -1054,18 +1054,6 @@ video {
   width: 100%;
 }
 
-.w-\[24\%\]{
-  width: 24%;
-}
-
-.w-\[70\%\]{
-  width: 70%;
-}
-
-.w-\[28\%\]{
-  width: 28%;
-}
-
 .min-w-full{
   min-width: 100%;
 }
@@ -1412,6 +1400,10 @@ video {
 
 .grid-flow-col-dense{
   grid-auto-flow: column dense;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2{
