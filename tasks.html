@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Add Purchase Order</title>
+    <title>Tasks</title>
   </head>
   <body>
     <section class="flex gap-0">
@@ -99,7 +99,7 @@
                       </filter>
                     </defs>
                   </svg>
-                  <span class="ms-3">Add Payment</span>
+                  <span class="ms-3">Dashboard</span>
                 </a>
               </li>
               <li>
@@ -170,13 +170,6 @@
                       href="customers.html"
                       class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
                       >Customers</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="payments.html"
-                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                      >Payments</a
                     >
                   </li>
                 </ul>
@@ -372,6 +365,117 @@
                   </li>
                 </ul>
               </li>
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="extra-dropdown"
+                  data-collapse-toggle="extra-dropdown"
+                >
+                  <i class="fa-solid fa-message"></i>
+                  <span
+                    class="flex-1 text-left ms-3 rtl:text-right whitespace-nowrap"
+                    >Extras</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <ul id="extra-dropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="messages.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Messages</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tasks.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Tasks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="inquiries.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Inquiries</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="finance-dropdown"
+                  data-collapse-toggle="finance-dropdown"
+                >
+                  <i class="fa-solid fa-coins"></i>
+                  <span
+                    class="flex-1 text-left ms-3 rtl:text-right whitespace-nowrap"
+                    >Financials</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <ul id="finance-dropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="payments.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Payments
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="expenses.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Expenses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="anlytics.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Analytics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="deposits.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Deposits</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </aside>
@@ -504,105 +608,194 @@
         </header>
         <main class="bg-[#f4f4f4] w-full h-full px-8 py-6">
           <div class="flex flex-col gap-4">
-            <h1 class="my-8 text-5xl font-semibold">Add Purchase Order</h1>
-            <section class="bg-[#fcfcfc] rounded-[10px] p-8">
-              <h3 class="text-[#1a1d1f] text-xl font-semibold">Invoice</h3>
-              <div class="flex flex-col gap-16 mt-12 mb-4">
-                <div class="grid grid-cols-1 gap-6">
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Order ID *</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="text"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Order ID *"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Supplier</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="text"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Supplier"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Date</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="date"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Date"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Products</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="number"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Products"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Amount ($)</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="number"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Amount"
-                    />
-                  </div>
-                </div>
-                <div class="flex justify-end px-8">
+            <h1 class="my-8 text-5xl font-semibold">Tasks</h1>
+            <section class="bg-[#fcfcfc] rounded-[10px] px-4 py-8">
+              <div class="flex items-center justify-between">
+                <h2 class="text-xl font-semibold">Products</h2>
+                <div class="flex gap-2">
                   <button
-                    class="cursor-pointer bg-[#2a85ff] text-[#fcfcfc] text-[15px] px-8 py-2 font-bold rounded-[9px]"
+                    data-modal-target="default-modal"
+                    data-modal-toggle="default-modal"
+                    class="cursor-pointer w-[125px] h-9 box-border bg-[#f4f4f4] text-[#1a1d1f] text-sm font-bold leading-4 px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef]"
                   >
-                    Submit
+                    + Add Task
                   </button>
+                  <select
+                    name="stats-span"
+                    id="stats-span"
+                    class="w-[125px] h-9 box-border bg-[#fcfcfc] text-[#6f767e] text-[13px] font-semibold leading-[17px] px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef] outline-none"
+                  >
+                    <option value="">This Week</option>
+                    <option value="">This Month</option>
+                    <option value="">This Year</option>
+                  </select>
                 </div>
+              </div>
+
+              <div class="flex flex-col my-4">
+                <div class="overflow-x-auto">
+                  <div class="inline-block min-w-full align-middle">
+                    <div class="overflow-hidden">
+                      <table class="min-w-full divide-y divide-gray-200">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th
+                              scope="col"
+                              class="px-6 py-3 text-start text-[#6f767e] font-bold"
+                            >
+                              Task
+                            </th>
+                            <th
+                              scope="col"
+                              class="text-[#6f767e] font-bold px-6 py-3 text-start"
+                            >
+                              Status
+                            </th>
+                            <th
+                              scope="col"
+                              class="text-[#6f767e] font-bold px-6 py-3 text-start"
+                            >
+                              Due Date
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                          <tr>
+                            <td>
+                              <div class="flex items-center">
+                                <input
+                                  id="checkbox-all-search"
+                                  type="checkbox"
+                                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500"
+                                />
+                                <label for="checkbox-all-search" class="sr-only"
+                                  >checkbox</label
+                                >
+                              </div>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div
+                                class="flex text-[#6d757d] text-xs font-bold w-[150px] items-center"
+                              >
+                                Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Molestias eligendi, quas
+                                architecto fuga ea hic soluta nobis sed est
+                                repellendus? Repudiandae, eveniet alias
+                              </div>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <p class="text-[#6d757d] font-semibold text-xs">
+                                  Pending
+                                </p>
+                              </div>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <p class="text-[#6d757d] font-semibold text-xs">
+                                  12/12/2021
+                                </p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+              <div class="flex justify-end gap-2 my-4 font-bold">
+                <p>Prev</p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>Next</p>
               </div>
             </section>
           </div>
         </main>
       </section>
     </section>
+    <div
+      id="default-modal"
+      tabindex="-1"
+      aria-hidden="true"
+      class="fixed top-0 left-0 right-0 z-50 flex items-center justify-center hidden w-full h-screen overflow-x-hidden overflow-y-auto"
+    >
+      <div
+        class="relative max-w-xl bg-white rounded-lg shadow dark:bg-gray-700"
+      >
+        <!-- Modal header -->
+        <div
+          class="flex items-center justify-between p-4 border-b rounded-t md:p-5"
+        >
+          <h3 class="text-xl font-semibold text-gray-900">Add New Product</h3>
+          <button
+            type="button"
+            class="inline-flex items-center justify-center w-8 h-8 text-sm text-gray-400 bg-transparent rounded-lg hover:bg-gray-200 hover:text-gray-900 ms-auto"
+            data-modal-hide="default-modal"
+          >
+            <svg
+              class="w-3 h-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+              />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <form class="p-4 space-y-4 md:p-5">
+          <div class="flex flex-col gap-2 my-6">
+            <label class="text-xs font-semibold leading-4" for="email"
+              >Task</label
+            >
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="w-[432px] h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="flex flex-col gap-2 my-6">
+            <label class="text-xs font-semibold leading-4" for="password">
+              Due Date</label
+            >
+            <input
+              type="date"
+              name="password"
+              id="password"
+              class="w-[432px] h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
+            />
+          </div>
+        </form>
+        <!-- Modal footer -->
+        <div
+          class="flex items-center p-4 border-t border-gray-200 rounded-b md:p-5 dark:border-gray-600"
+        >
+          <button
+            data-modal-hide="default-modal"
+            type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
   </body>
 </html>

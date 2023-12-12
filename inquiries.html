@@ -15,7 +15,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
       rel="stylesheet"
     />
-    <title>Add Purchase Order</title>
+    <title>Inquiries</title>
   </head>
   <body>
     <section class="flex gap-0">
@@ -99,7 +99,7 @@
                       </filter>
                     </defs>
                   </svg>
-                  <span class="ms-3">Add Payment</span>
+                  <span class="ms-3">Dashboard</span>
                 </a>
               </li>
               <li>
@@ -170,13 +170,6 @@
                       href="customers.html"
                       class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
                       >Customers</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="payments.html"
-                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
-                      >Payments</a
                     >
                   </li>
                 </ul>
@@ -372,6 +365,117 @@
                   </li>
                 </ul>
               </li>
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="extra-dropdown"
+                  data-collapse-toggle="extra-dropdown"
+                >
+                  <i class="fa-solid fa-message"></i>
+                  <span
+                    class="flex-1 text-left ms-3 rtl:text-right whitespace-nowrap"
+                    >Extras</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <ul id="extra-dropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="messages.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Messages</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="tasks.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Tasks</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="inquiries.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Inquiries</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="flex items-center w-full p-2 text-base text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100"
+                  aria-controls="finance-dropdown"
+                  data-collapse-toggle="finance-dropdown"
+                >
+                  <i class="fa-solid fa-coins"></i>
+                  <span
+                    class="flex-1 text-left ms-3 rtl:text-right whitespace-nowrap"
+                    >Financials</span
+                  >
+                  <svg
+                    class="w-3 h-3"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 10 6"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </button>
+                <ul id="finance-dropdown" class="hidden py-2 space-y-2">
+                  <li>
+                    <a
+                      href="payments.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Payments
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="expenses.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Expenses</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="anlytics.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Analytics</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="deposits.html"
+                      class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100"
+                      >Deposits</a
+                    >
+                  </li>
+                </ul>
+              </li>
             </ul>
           </nav>
         </aside>
@@ -504,99 +608,87 @@
         </header>
         <main class="bg-[#f4f4f4] w-full h-full px-8 py-6">
           <div class="flex flex-col gap-4">
-            <h1 class="my-8 text-5xl font-semibold">Add Purchase Order</h1>
-            <section class="bg-[#fcfcfc] rounded-[10px] p-8">
-              <h3 class="text-[#1a1d1f] text-xl font-semibold">Invoice</h3>
-              <div class="flex flex-col gap-16 mt-12 mb-4">
-                <div class="grid grid-cols-1 gap-6">
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Order ID *</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="text"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Order ID *"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Supplier</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="text"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Supplier"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Date</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="date"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Date"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Products</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="number"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Products"
-                    />
-                  </div>
-                  <div class="flex flex-col gap-4">
-                    <label
-                      class="text-xs text-[#1a1d1f] font-semibold leading-4"
-                      for="password"
-                    >
-                      Amount ($)</label
-                    >
-                    <input
-                      style="background-color: #f4f4f4; border-radius: 10px"
-                      type="number"
-                      name="password"
-                      id="password"
-                      class="w-full h-12 box-border bg-[#f4f4f4] text-[#6f767e] text-[15px] font-medium leading-6 px-2 py-0 rounded-[10px] border-0 outline-none"
-                      placeholder="Amount"
-                    />
-                  </div>
-                </div>
-                <div class="flex justify-end px-8">
-                  <button
-                    class="cursor-pointer bg-[#2a85ff] text-[#fcfcfc] text-[15px] px-8 py-2 font-bold rounded-[9px]"
+            <h1 class="my-8 text-5xl font-semibold">Inquiries</h1>
+            <section class="bg-[#fcfcfc] rounded-[10px] px-4 py-8">
+              <div class="flex items-center justify-between">
+                <h2 class="text-xl font-semibold">Products</h2>
+                <div class="flex gap-2">
+                  <select
+                    name="stats-span"
+                    id="stats-span"
+                    class="w-[125px] h-9 box-border bg-[#fcfcfc] text-[#6f767e] text-[13px] font-semibold leading-[17px] px-2 py-0 rounded-[10px] border-2 border-solid border-[#efefef] outline-none"
                   >
-                    Submit
-                  </button>
+                    <option value="">This Week</option>
+                    <option value="">This Month</option>
+                    <option value="">This Year</option>
+                  </select>
                 </div>
+              </div>
+
+              <div class="flex flex-col my-4">
+                <div class="overflow-x-auto">
+                  <div class="inline-block min-w-full align-middle">
+                    <div class="overflow-hidden">
+                      <table class="min-w-full divide-y divide-gray-200">
+                        <thead>
+                          <tr>
+                            <th
+                              scope="col"
+                              class="px-6 py-3 text-start text-[#6f767e] text-lg font-bold"
+                            >
+                              Sender
+                            </th>
+                            <th
+                              scope="col"
+                              class="text-[#6f767e] text-lg font-bold px-6 py-3 text-start"
+                            >
+                              Inquiry
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200">
+                          <tr>
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <span
+                                  class="text-[#2357d7] text-[15px] font-bold"
+                                >
+                                  M ALi
+                                </span>
+                                <span class="text-[#6d757d] text-xs font-bold">
+                                  +923001234567
+                                </span>
+                                <span class="text-[#6d757d] text-xs font-bold">
+                                  mali000@gamil.com
+                                </span>
+                              </div>
+                            </td>
+                            <td class="px-6 py-4">
+                              <div class="flex flex-col">
+                                <p class="text-[#6d757d] font-semibold">
+                                  Lorem ipsum dolor sit amet consectetur
+                                  adipisicing elit. Voluptatibus blanditiis
+                                  molestias eligendi quaerat eius commodi atque
+                                  odio quae in necessitatibus. Eum nulla
+                                  delectus dolorum est tempore reiciendis dolore
+                                  dicta dolorem!
+                                </p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="flex justify-end gap-2 my-4 font-bold">
+                <p>Prev</p>
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>Next</p>
               </div>
             </section>
           </div>
